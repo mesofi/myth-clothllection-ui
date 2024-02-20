@@ -1,5 +1,3 @@
-joinfaces:
-  faces:
-    PROJECT_STAGE: Development
-#  primefaces:
-#    theme: overcast
+spring:
+  codec:
+    max-in-memory-size: 16777216

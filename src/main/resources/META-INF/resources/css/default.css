@@ -1,0 +1,12 @@
+.character-item img {
+    width: 200px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    margin-right: 2rem;
+}
+
+.character-item {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    flex: 1 1 100px;
+}

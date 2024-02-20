@@ -1,0 +1,9 @@
+character-catalog:
+  base-url: http://localhost:8080/api/
+
+joinfaces:
+  faces:
+    PROJECT_STAGE: Development
+
+server:
+  port: 8088
