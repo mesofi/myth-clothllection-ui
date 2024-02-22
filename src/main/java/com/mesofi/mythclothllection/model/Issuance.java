@@ -2,7 +2,12 @@ package com.mesofi.mythclothllection.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Issuance {
   private BigDecimal basePrice; // The price without taxes.
 
@@ -15,7 +20,7 @@ public class Issuance {
   private Boolean
       preorderConfirmationDay; // <== Calculated == Used to determine if the day was confirmed.
 
-  private LocalDate releaseDate; // Date when the figure was released in Japan.
+  private Date releaseDate; // Date when the figure was released in Japan.
 
   private Boolean releaseConfirmationDay;
 }

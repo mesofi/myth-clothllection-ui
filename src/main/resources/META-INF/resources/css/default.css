@@ -10,3 +10,13 @@
     align-items: center;
     flex: 1 1 100px;
 }
+
+.character-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.character-description {
+    color: gray;
+    margin: 0 0 1rem 0;
+}

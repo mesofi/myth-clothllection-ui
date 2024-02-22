@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
 
 <h:head>
     <h:outputStylesheet name="css/default.css" />
@@ -20,9 +21,16 @@
             <p:dataViewListItem>
                 <div class="character-item">
                     <p:graphicImage url="#{character.images[0].url}"/>
-                    <div class="" style="border-width: thick;">
-                        <div class="">#{character.displayableName}</div>
-                        <div class="">#{product.remarks}</div>
+                    <div class="">
+                        <div class="character-name">#{character.displayableName}</div>
+                        <div class="character-description">#{character.remarks}</div>
+                        <h:outputText rendered="#{character.futureRelease}" value="Not Released Yet" />
+                        <h:outputText rendered="#{not character.futureRelease and character.issuanceJPY.releaseConfirmationDay}" value="#{character.issuanceJPY.releaseDate}">
+                            <f:convertDateTime pattern="MMMM dd, yyyy"/>
+                        </h:outputText>
+                        <h:outputText rendered="#{not character.futureRelease and not character.issuanceJPY.releaseConfirmationDay}" value="#{character.issuanceJPY.releaseDate}">
+                            <f:convertDateTime pattern="MMMM, yyyy" />
+                        </h:outputText>
                     </div>
                     <div class="">
                         <h:outputText value="#{character.series}" styleClass="product-price">
@@ -30,33 +38,6 @@
                     </div>
                 </div>
             </p:dataViewListItem>
-
-            <!--
-            <p:dataViewGridItem>
-                <div class="product-grid-item card border-1">
-                    <div class="product-grid-item-top">
-                        <div>
-                            <i class="pi pi-tag product-category-icon"/>
-                            <span class="product-category">#{character.displayableName}</span>
-                        </div>
-                    </div>
-                    <div class="product-grid-item-content">
-                        <p:graphicImage url="#{character.images[0].url}"/>
-                        <div class="product-name">#{character.series}</div>
-                        <div class="product-description">#{character.baseName}</div>
-                        <p:rating readonly="true" value="5"/>
-                    </div>
-                    <div class="product-grid-item-bottom">
-                        <h:outputText value="45" styleClass="product-price">
-                        </h:outputText>
-                        <p:commandButton type="button"
-                                         value="Add To Cart"
-                                         icon="pi pi-shopping-cart">
-                        </p:commandButton>
-                    </div>
-                </div>
-            </p:dataViewGridItem>
-            -->
         </p:dataView>
     </h:form>
 </h:body>
