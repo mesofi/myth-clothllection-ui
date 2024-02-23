@@ -1,15 +1,85 @@
-.character-item img {
-    width: 200px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-    margin-right: 2rem;
-}
-
 .character-item {
     display: flex;
     padding: 1rem;
     align-items: center;
     flex: 1 1 100px;
 }
+.character-item img {
+    width: 200px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+.character-item-gold img:hover {
+    box-shadow: 0 3px 6px rgb(252,220,63), 0 3px 6px rgb(252,220,63);
+}
+.character-item-scale img:hover {
+    box-shadow: 0 3px 6px rgb(13,140,57), 0 3px 6px rgb(13,140,57);
+}
+.character-item-scale-ex img:hover {
+    box-shadow: 0 3px 6px rgb(7,63,184), 0 3px 6px rgb(7,63,184);
+}
+.character-item-silver img:hover {
+    box-shadow: 0 3px 6px rgb(199,179,154), 0 3px 6px rgb(199,179,154);
+}
+.character-item-v3 img:hover {
+    box-shadow: 0 3px 6px rgb(151,156,159), 0 3px 6px rgb(151,156,159);
+}
+.character-item-v3-ex img:hover {
+    box-shadow: 0 3px 6px rgb(186,59,46), 0 3px 6px rgb(186,59,46);
+}
+.character-item-god img:hover {
+    box-shadow: 0 3px 6px rgb(185,157,190), 0 3px 6px rgb(185,157,190);
+}
+.character-item-god-ex img:hover {
+    box-shadow: 0 3px 6px rgb(61,45,73), 0 3px 6px rgb(61,45,73);
+}
+.character-item-judge img:hover {
+    box-shadow: 0 3px 6px rgb(185,157,190), 0 3px 6px rgb(185,157,190);
+}
+.character-item-judge-ex img:hover {
+    box-shadow: 0 3px 6px rgb(203,109,211), 0 3px 6px rgb(203,109,211);
+}
+.character-item-specter img:hover {
+    box-shadow: 0 3px 6px rgb(126,95,136), 0 3px 6px rgb(126,95,136);
+}
+.character-item-surplice img:hover {
+    box-shadow: 0 3px 6px rgb(126,95,136), 0 3px 6px rgb(126,95,136);
+}
+.character-item-surplice-ex img:hover {
+    box-shadow: 0 3px 6px rgb(237,212,247), 0 3px 6px rgb(237,212,247);
+}
+.character-item-robe img:hover {
+    box-shadow: 0 3px 6px rgb(97,85,127), 0 3px 6px rgb(97,85,127);
+}
+.character-item-robe-ex img:hover {
+    box-shadow: 0 3px 6px rgb(25,26,35), 0 3px 6px rgb(25,26,35);
+}
+.character-item-steel img:hover {
+    box-shadow: 0 3px 6px rgb(213,216,231), 0 3px 6px rgb(213,216,231);
+}
+.character-item-black img:hover {
+    box-shadow: 0 3px 6px rgb(52,63,71), 0 3px 6px rgb(52,63,71);
+}
+.character-item-secondary img:hover {
+    box-shadow: 0 3px 6px rgb(191,206,231), 0 3px 6px rgb(191,206,231);
+}
+.character-item-v1 img:hover {
+    box-shadow: 0 3px 6px rgb(207,207,219), 0 3px 6px rgb(207,207,219);
+}
+.character-item-v2 img:hover {
+    box-shadow: 0 3px 6px rgb(108,131,163), 0 3px 6px rgb(108,131,163);
+}
+.character-item-v2-ex img:hover {
+    box-shadow: 0 3px 6px rgb(46,143,203), 0 3px 6px rgb(46,143,203);
+}
+.character-item-v4 img:hover {
+    box-shadow: 0 3px 6px rgb(211,212,207), 0 3px 6px rgb(211,212,207);
+}
+.character-item-v5 img:hover {
+    box-shadow: 0 3px 6px rgb(238,238,240), 0 3px 6px rgb(238,238,240);
+}
+
 
 .character-name {
     font-size: 1rem;

@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public abstract class Figure {
+public abstract class Figure extends FigureUI {
   private Issuance issuanceJPY;
 
   private Issuance issuanceMXN;
