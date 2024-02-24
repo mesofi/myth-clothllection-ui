@@ -80,7 +80,6 @@
     box-shadow: 0 3px 6px rgb(238,238,240), 0 3px 6px rgb(238,238,240);
 }
 
-
 .character-name {
     font-size: 1rem;
     font-weight: 700;
@@ -89,4 +88,11 @@
 .character-description {
     color: gray;
     margin: 0 0 1rem 0;
+}
+
+.character-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    align-self: flex-end;
 }

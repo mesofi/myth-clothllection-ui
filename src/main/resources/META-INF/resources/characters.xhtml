@@ -22,19 +22,22 @@
                 <div class="character-item #{character.characterItemClass}">
                     <p:graphicImage url="#{character.images[0].url}"/>
                     <div class="">
-                        <div class="character-name">#{character.displayableName}</div>
+                        <div class="character-name">
+                            <h:outputLabel id="displayable-name-id" value="#{character.displayableName}"/>
+                            <p:tooltip for="displayable-name-id">
+                                <p:graphicImage url="/images/#{character.seriesLogo}" style="width: 150px; height: 30px"/>
+                            </p:tooltip>
+                        </div>
                         <div class="character-description">#{character.remarks}</div>
-                        <h:outputText rendered="#{character.futureRelease}" value="Not Released Yet" />
-                        <h:outputText rendered="#{not character.futureRelease and character.issuanceJPY.releaseConfirmationDay}" value="#{character.issuanceJPY.releaseDate}">
-                            <f:convertDateTime pattern="MMMM dd, yyyy"/>
-                        </h:outputText>
-                        <h:outputText rendered="#{not character.futureRelease and not character.issuanceJPY.releaseConfirmationDay}" value="#{character.issuanceJPY.releaseDate}">
-                            <f:convertDateTime pattern="MMMM, yyyy" />
-                        </h:outputText>
                     </div>
                     <div class="">
-                        <h:outputText value="#{character.series}" styleClass="product-price">
-                        </h:outputText>
+                    </div>
+                    <div class="">
+                    </div>
+                    <div class="">
+                        <div class="character-price">13200.23 JPY</div>
+                        <div class="">Aug 31, 2022</div>
+                        <div class="">Aug 31, 2022</div>
                     </div>
                 </div>
             </p:dataViewListItem>

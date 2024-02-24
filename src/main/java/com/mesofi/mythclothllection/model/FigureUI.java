@@ -7,4 +7,5 @@ import lombok.Setter;
 @Setter
 public class FigureUI {
   private String characterItemClass;
+  private String seriesLogo;
 }

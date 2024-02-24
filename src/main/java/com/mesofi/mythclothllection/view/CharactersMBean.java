@@ -32,6 +32,7 @@ public class CharactersMBean {
     characterFigureList =
         charactersService.retrieveAllCharacters().stream()
             .peek(this::createCharacterItemClass)
+            .peek(this::createCharacterSeriesLogo)
             .collect(Collectors.toList());
   }
 
@@ -71,5 +72,18 @@ public class CharactersMBean {
           case OTHER -> null;
         };
     character.setCharacterItemClass(itemClass);
+  }
+
+  private void createCharacterSeriesLogo(CharacterFigure character) {
+    String seriesLogo =
+        switch (character.getLineUp()) {
+          case MYTH_CLOTH -> "myth-cloth.png";
+          case MYTH_CLOTH_EX -> "myth-cloth-ex.png";
+          case APPENDIX -> "appendix.png";
+          case CROWN -> "crown.png";
+          case LEGEND -> "legend.png";
+          case DDP, FIGUARTS -> null;
+        };
+    character.setSeriesLogo(seriesLogo);
   }
 }
