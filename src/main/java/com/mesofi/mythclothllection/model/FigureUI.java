@@ -6,6 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FigureUI {
-  private String characterItemClass;
+  private String lineUpLogo;
   private String seriesLogo;
+  private String distributionType;
+  private String distributionBackgroundColor;
+  private String groupBackgroundColor;
 }
