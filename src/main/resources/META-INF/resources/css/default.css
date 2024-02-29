@@ -2,44 +2,22 @@ divs {
     border: 1px solid;
 }
 .character-item {
-    position: relative;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
-.character-item img {
-    width: 200px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-}
-.character-item-revival {
-    position: absolute;
-    bottom: 15px;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,215,0,1) 30%, rgba(255,215,1,1) 70%, rgba(255,255,255,0) 100%);
-    font-size: xx-small;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 20px;
-    border-radius: 35px;
-}
-
-.character-item2 {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5;
 }
-.character-item2-picture {
+.character-item-picture {
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 }
-.character-item2-picture-image {
+.character-item-picture-image {
     position: relative;
 }
-.character-item2-picture-image img {
+.character-item-picture-image img {
     width: 220px;
 }
-.character-item2-picture-image-distribution {
+.character-item-picture-image-distribution {
     position: absolute;
     bottom: 0px;
     width: 220px;
@@ -52,7 +30,7 @@ divs {
     color: rgb(236,242,253)
     /* background-color: white; This is going to be set dynamically in the view layer */
 }
-.character-item2-picture-image-revival {
+.character-item-picture-image-revival {
     position: absolute;
     bottom: 15px;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,215,0,1) 30%, rgba(255,215,1,1) 70%, rgba(255,255,255,0) 100%);
@@ -62,24 +40,24 @@ divs {
     margin-left: 20px;
     border-radius: 35px;
 }
-.character-item2-picture-image-lineup {
+.character-item-picture-image-lineup {
     position: absolute;
     top: 6px;
     left: 8px;
 }
-.character-item2-picture-image-lineup img {
+.character-item-picture-image-lineup img {
     width: 65px
 }
-.character-item2-picture-image-series {
+.character-item-picture-image-series {
     position: absolute;
     top: 6px;
     right: 8px;
 }
-.character-item2-picture-image-series img {
+.character-item-picture-image-series img {
     width: 50px
 }
-.character-item2-content {
+.character-item-content {
     box-shadow: -7px 0px 0px -2px rgb(255, 255, 255); /* this is going to be replaced dynamically in the view */
 }
-.character-item2-content-detail {
+.character-item-content-detail {
 }

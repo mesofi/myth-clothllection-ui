@@ -14,44 +14,31 @@
                     rowsPerPageTemplate="6,12,16"
                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                     gridIcon="pi pi-th-large" listIcon="pi pi-bars">
-            <!--
-            <p:dataViewListItem>
-                <div class="character-item2">
-                    <div class="character-item-image">
-                        <p:graphicImage url="#{character.images[0].url}"/>
-                        <div class="character-item-revival2">&lt;Revival Ver.&gt;</div>
-                        <p:graphicImage url="/images/#{character.seriesLogo}"/>
-                    </div>
-                    <div class="character-item-content">
-                        Content
-                    </div>
-                </div>
-            </p:dataViewListItem>
-            -->
+
             <p:dataViewGridItem>
                 dataViewGridItem
             </p:dataViewGridItem>
             <p:dataViewListItem>
-                <div class="character-item2">
-                    <div class="character-item2-picture">
-                        <div class="character-item2-picture-image">
+                <div class="character-item">
+                    <div class="character-item-picture">
+                        <div class="character-item-picture-image">
                             <p:graphicImage url="#{character.images[0].url}"/>
-                            <div jsf:rendered="#{not empty character.distribution}" class="character-item2-picture-image-distribution" style="background-color: #{character.distributionBackgroundColor}">
+                            <div jsf:rendered="#{not empty character.distribution}" class="character-item-picture-image-distribution" style="background-color: #{character.distributionBackgroundColor}">
                                 <h:outputText value="#{character.distributionType}" />
                             </div>
-                            <div jsf:rendered="#{character.revival}" class="character-item2-picture-image-revival">
+                            <div jsf:rendered="#{character.revival}" class="character-item-picture-image-revival">
                                 <h:outputText value="&lt;Revival Ver.&gt;" />
                             </div>
-                            <div class="character-item2-picture-image-lineup">
+                            <div class="character-item-picture-image-lineup">
                                 <p:graphicImage url="/images/lineup/#{character.lineUpLogo}"/>
                             </div>
-                            <div class="character-item2-picture-image-series">
+                            <div class="character-item-picture-image-series">
                                 <p:graphicImage url="/images/series/#{character.seriesLogo}"/>
                             </div>
                         </div>
                     </div>
-                    <div class="character-item2-content" style="box-shadow: -7px 0px 0px -2px #{character.groupBackgroundColor}">
-                        <div class="character-item2-content-detail">
+                    <div class="character-item-content" style="box-shadow: -7px 0px 0px -2px #{character.groupBackgroundColor}">
+                        <div class="character-item-content-detail">
                             #{character.displayableName}
                         </div>
                     </div>
