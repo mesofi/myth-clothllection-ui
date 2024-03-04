@@ -20,7 +20,7 @@
             </p:dataViewGridItem>
             <p:dataViewListItem>
                 <div class="character-item">
-                    <div class="character-item-picture">
+                    <div class="character-item-picture" style="border: 2px solid #{character.groupBackgroundColor}">
                         <div class="character-item-picture-image">
                             <p:graphicImage url="#{character.images[0].url}"/>
                             <div jsf:rendered="#{not empty character.distribution}" class="character-item-picture-image-distribution" style="background-color: #{character.distributionBackgroundColor}">
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="character-item-content" style="box-shadow: -7px 0px 0px -2px #{character.groupBackgroundColor}">
+                    <div class="character-item-content">
                         <div class="character-item-content-detail">
                             #{character.displayableName}
                         </div>
